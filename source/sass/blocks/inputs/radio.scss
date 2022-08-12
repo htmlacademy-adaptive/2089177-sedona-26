@@ -1,0 +1,22 @@
+.radio {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  align-items: center;
+}
+
+.radio__input {
+  width: 46px;
+  height: 46px;
+  background-color: $gray;
+}
+
+.radio__subtitle {
+  text-transform: none;
+  font-weight: bold;
+  font-size: $mobile-font-title;
+  line-height: $mobile-height-title;
+  padding-left: 16px;
+}

@@ -1,0 +1,79 @@
+.form {
+  padding: 0 20px 0 20px;
+  margin: 0;
+}
+
+.form__item {
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.form__title {
+  font-weight: bold;
+  font-size: $mobile-font-title;
+  line-height: $mobile-height-title;
+  padding: 0 5px 4px 5px;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form__label {
+  font-weight: normal;
+  font-size: $mobile-font-subtitle;
+  line-height: $mobile-height-subtitle;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.form__input {
+  border: none;
+  min-height: 58px;
+  background-color: $gray;
+  padding-left: 16px;
+  font-weight: bold;
+  font-size: $mobile-font-title;
+  line-height: $mobile-height-title;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__textarea {
+  width: 100%;
+  background-color: $gray;
+  border: none;
+  margin-top: 20px;
+  padding: 14px 21px 15px 21px;
+  font-weight: bold;
+  font-size: $mobile-font-title;
+  line-height: $mobile-height-title;
+}
+
+.form__button {
+  font-size: $mobile-font-title;
+  line-height: $mobile-height-title;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: $blue;
+  padding: 14px 32px 14px 32px;
+  cursor: pointer;
+  width: 281px;
+}
+
+.form__comment {
+  margin: 0;
+  text-align: right;
+  font-size: 12px;
+  line-height: 21px;
+}

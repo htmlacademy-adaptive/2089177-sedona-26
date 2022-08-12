@@ -1,0 +1,44 @@
+.gallery__list {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.gallery__item {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.gallery__item::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: $gray;
+  top: 0;
+  left: -20px;
+  right: -20px;
+}
+
+.gallery__item:last-child::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #e7e5e5;
+  bottom: 0;
+  left: -20px;
+  right: -20px;
+}
+
+.gallery__title {
+  margin: 0;
+  padding-top: 15px;
+  color: $black;
+}
+
+.gallery__description {
+  text-transform: none;
+  margin: 0;
+  padding-top: 15px;
+}

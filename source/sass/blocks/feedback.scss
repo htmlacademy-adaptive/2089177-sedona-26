@@ -1,0 +1,15 @@
+.feedback {
+  position: relative;
+}
+
+.button--play {
+  position: absolute;
+  cursor: pointer;
+  background: url("../img/icons/icon-play-button.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 55px;
+  border: none;
+  left: 144px;
+  bottom: 66px;
+}

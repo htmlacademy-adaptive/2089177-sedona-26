@@ -1,0 +1,58 @@
+.profit {
+  list-style: none;
+  text-align: left;
+  padding: 35px 20px 22px 20px;
+}
+
+.profit---background {
+  background-color: $white;
+  color: $black;
+}
+
+.profit__item {
+  position: relative;
+  padding: 0 0 30px 50px;
+}
+
+.profit__item::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 38px;
+}
+
+.profit__item--icon-housing::before {
+  background-image: url("../img/icons/icon-house.svg");
+  background-repeat: no-repeat;
+  top: -10px;
+  left: 3px;
+}
+
+.profit__item--icon-food::before {
+  background-image: url("../img/icons/icon-burger.svg");
+  background-repeat: no-repeat;
+  top: -10px;
+  left: 3px;
+}
+
+.profit__item--icon-souvenir::before {
+  background-image: url("../img/icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  top: -10px;
+  left: 5px;
+}
+
+.profit__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: $mobile-font-title;
+  line-height: $mobile-height-title;
+}
+
+.profit__subtitle {
+  margin: 0;
+  padding-top: 16px;
+  font-weight: normal;
+  font-size: $mobile-font-subtitle;
+  line-height: $mobile-height-subtitle;
+}
