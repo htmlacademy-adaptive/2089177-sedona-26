@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <title>Главная страница</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <title>Главная страница</title>
+</head>
 
 <body class="body">
 
@@ -39,9 +39,13 @@
     </header>
 
     <main class="content">
-      <section class="feedback">
-        <h1 class="feedback__title">фото и видео</h1>
-        <p class="feedback__subtitle">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о
+      <div class="content__img-gallery">
+        <img class="content__welcome-title" src="img/mobile-header-welcome-title-gallery.svg" width="282" height="214"
+          alt="Добро пожаловать">
+      </div>
+      <section class="section">
+        <h1 class="section__title">фото и видео</h1>
+        <p class="section__subtitle">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о
           политике и экономике.</p>
       </section>
       <section class="gallery">
@@ -49,68 +53,81 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="#" width="280" height="280" alt="дорога на закате">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 768px)" srcset="">
+                <img class="gallery__img" src="img/gallery-photo-mobile-1.jpg" width="280" height="280"
+                  alt="дорога на закате">
+              </picture>
               <h3 class="gallery__title">неродные просторы</h3>
             </a>
             <p class="gallery__description">Автор фото: Борис</p>
-            <p class="gallery__likes">
-              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              1350
-            </p>
+            <div class="likes">
+              <button class="likes__button"></button>
+              <p class="likes__description">1350</p>
+            </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="#" width="280" height="280" alt="фото кактуса">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 768px)" srcset="">
+                <img class="gallery__img" src="img/gallery-photo-mobile-2.jpg" width="280" height="280"
+                  alt="фото кактуса">
+              </picture>
+
               <h3 class="gallery__title">местная растительность</h3>
             </a>
             <p class="gallery__description">Автор фото: Сергей</p>
-            <p class="gallery__likes">
-              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              143
-            </p>
+            <div class="likes">
+              <button class="likes__button"></button>
+              <p class="likes__description">143</p>
+            </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="#" width="280" height="280" alt="Серпантин в лесу">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 768px)" srcset="">
+                <img class="gallery__img" src="img/gallery-photo-mobile-3.jpg" width="280" height="280"
+                  alt="Серпантин в лесу">
+              </picture>
               <h3 class="gallery__title">дорога на север</h3>
             </a>
             <p class="gallery__description">Автор фото: Петр</p>
-            <p class="gallery__likes">
-              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              96
-            </p>
+            <div class="likes">
+              <button class="likes__button"></button>
+              <p class="likes__description">96</p>
+            </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__img" src="#" width="280" height="280" alt="Серпантин в лесу">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="">
+                <source media="(min-width: 768px)" srcset="">
+                <img class="gallery__img" src="img/gallery-photo-mobile-4.jpg" width="280" height="280"
+                  alt="Мост дьявола">
+              </picture>
               <h3 class="gallery__title">мост дьявола</h3>
             </a>
             <p class="gallery__description">Автор фото: Антон</p>
-            <p class="gallery__likes">
-              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              254
-            </p>
+            <div class="likes">
+              <button class="likes__button"></button>
+              <p class="likes__description">254</p>
+            </div>
+
           </li>
         </ul>
       </section>
       <section class="feedback">
-        <h2 class="feedback__title">все еще сомневаетесь?</h2>
-        <p class="feedback__subtitle">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        <h2 class="visually-hidden">Посмотрите видео о Седоне!</h2>
+        <section class="section">
+          <h2 class="section__title">все еще сомневаетесь?</h2>
+        <p class="section__subtitle">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
-          <img class="feedback__video feedback__video--img" src="#" width="320" height="200" alt="Видео о Седоне">
-          <button class="feedback__button button button--play" type="button">play</button>
+        </section>
+        <img class="feedback__video feedback__video--img" src="img/video-mobile.jpg" width="280" height="177" alt="Видео о Седоне">
+        <button class="feedback__button button--play" type="button"></button>
       </section>
     </main>
 

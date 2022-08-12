@@ -38,89 +38,94 @@
     </header>
 
     <main class="content content__container">
-      <section class="feedback">
-        <h1 class="feedback__title">оставьте свой отзыв</h1>
-        <p class="feedback__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+      <div class="content__img-form">
+        <img class="content__welcome-title" src="img/mobile-header-welcome-title-gallery.svg" width="282" height="214"
+          alt="Добро пожаловать">
+      </div>
+      <section class="section">
+        <h1 class="section__title">оставьте свой отзыв</h1>
+        <p class="section__subtitle">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
       </section>
-      <section class="form">
-        <h2 class="visually-hidden">Укажите необходимые данные</h2>
 
-        <form class="form__container" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form-field form-field--login">
-            <legend class="form-field__title">представьтесь:</legend>
-            <div class="field ">
-              <label class="field__label" for="login-name">имя*:</label>
-              <input class="field__input" id="login-name" type="text" name="name" placeholder="Петр">
+
+        <form class="form" action="https://echo.htmlacademy.ru" method="get">
+
+          <h2 class="visually-hidden">Укажите необходимые данные</h2>
+          <fieldset class="form__item">
+            <legend class="form__title">представьтесь:</legend>
+            <div class="form__container ">
+              <label class="form__label" for="login-name">имя*:</label>
+              <input class="form__input" id="login-name" type="text" name="name" placeholder="Петр">
             </div>
-            <div class="field">
-              <label class="field__label" for="login-surname">фамилия*:</label>
-              <input class="field__input" id="login-surname" type="text" name="surname" placeholder="Пустота">
+            <div class="form__container">
+              <label class="form__label" for="login-surname">фамилия*:</label>
+              <input class="form__input" id="login-surname" type="text" name="surname" placeholder="Пустота">
             </div>
-            <div class="field">
-              <label class="field__label" for="login-patronymic">отчество:</label>
-              <input class="field__input" id="login-patronymic" type="text" name="patronymic" placeholder="Викторович">
+            <div class="form__container">
+              <label class="form__label" for="login-patronymic">отчество:</label>
+              <input class="form__input" id="login-patronymic" type="text" name="patronymic" placeholder="Викторович">
             </div>
           </fieldset>
 
-          <fieldset class="form-field form-field--contacts">
-            <legend class="form-field__title">контактная информация:</legend>
-            <div class="field">
-              <label class="field__label" for="contact-telephone">контактный телефон*:</label>
-              <input class="field__input field__input--telephone" id="contact-telephone" type="tel" name="telephone"
+          <fieldset class="form__item">
+            <legend class="form__title">контактная информация:</legend>
+            <div class="form__container">
+              <label class="form__label" for="contact-telephone">контактный телефон*:</label>
+              <input class="form__input" id="contact-telephone" type="tel" name="telephone"
                 placeholder="Введите телефон">
             </div>
-            <div class="field">
-              <label class="field__label" for="contact-email">электронная почта*:</label>
-              <input class="field__input field__input--email" id="contact-email" type="email" name="email"
+            <div class="form__container">
+              <label class="form__label" for="contact-email">электронная почта*:</label>
+              <input class="form__input" id="contact-email" type="email" name="email"
                 placeholder="Введите e-mail">
             </div>
           </fieldset>
 
-          <fieldset class="form-field form-field--impression">
-            <legend class="form-field__title">Ваше общее впечатление:</legend>
-            <ul class="form-field__list ">
-              <li class="form-field__item radio">
+          <fieldset class="form__item">
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <ul class="form__list ">
+              <li class="form__container radio">
                 <input class="radio__input" type="radio" checked name="impression" value="positive"
                   id="review-positive">
-                <label for="review-positive">Скорее положительное</label>
+                <label class="radio__subtitle"for="review-positive">Скорее положительное</label>
               </li>
-              <li class="form-field__item radio">
+              <li class="form__container radio">
                 <input class="radio__input" type="radio" name="impression" value="negative" id="review-negative">
-                <label for="review-negative">Скорее отрицательное</label>
+                <label class="radio__subtitle" for="review-negative">Скорее отрицательное</label>
               </li>
-              <li class="form-field__item radio">
+              <li class="form__container radio">
                 <input class="radio__input" type="radio" name="impression" value="indefinite" id="review-indefinite">
-                <label for="review-indefinite">Затрудняюсь ответить</label>
+                <label class="radio__subtitle" for="review-indefinite">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form-field form-field--attractions">
-            <legend class="form-field__title">Посещенные достопримечательности:</legend>
-            <ul class="form-field__list ">
-              <li class="form-field__item checkbox">
+          <fieldset class="form__item">
+            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <ul class="form__list ">
+              <li class="form__container checkbox">
                 <input class="checkbox__input" type="checkbox" checked name="bridge" id="review-bridge">
-                <label for="review-bridge">Мост Дьявола</label>
+                <label class="checkbox__subtitle" for="review-bridge">Мост Дьявола</label>
               </li>
-              <li class="form-field__item checkbox">
+              <li class="form__container checkbox">
                 <input class="checkbox__input" type="checkbox" checked name="The Bell Mountain" id="review-mountain">
-                <label for="review-mountain">Гора-Колокол</label>
+                <label class="checkbox__subtitle" for="review-mountain">Гора-Колокол</label>
               </li>
-              <li class="form-field__item checkbox">
+              <li class="form__container checkbox">
                 <input class="checkbox__input" type="checkbox" checked name="The Slide park" id="review-park">
-                <label for="review-park">Слайд-парк</label>
+                <label class="checkbox__subtitle" for="review-park">Слайд-парк</label>
               </li>
-              <li class="form-field__item checkbox">
+              <li class="form__container checkbox">
                 <input class="checkbox__input" type="checkbox" name="Red rocks" id="review-rocks">
-                <label for="review-rocks">Красные скалы</label>
+                <label class="checkbox__subtitle" for="review-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
 
-          <div class="form-field form-field--emotions">
-            <label class="form-field__title" for="feedback-description">опишите свои эмоции:</label>
-            <textarea class="form-field__textarea" id="feedback-description" name="text" rows="5"
+          <div class="form__item">
+            <label class="form__title" for="feedback-description">опишите свои эмоции:</label>
+            <textarea class="form__textarea" id="feedback-description" name="text" rows="5"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 

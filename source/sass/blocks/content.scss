@@ -1,6 +1,7 @@
 .content {
   padding-top: 55px;
 }
+
 .content__container {
   flex-grow: 1;
 }
@@ -12,4 +13,22 @@
   background-position-x: 50%;
   background-position-y: 100%;
   padding-top: 90px;
+}
+
+.content__img-gallery {
+  height: 158px;
+  background: url("../img/welcome-triangle.svg"), url("../img/mobile-header-welcome-gallery.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  padding-top: 52px;
+}
+
+.content__img-form {
+  height: 158px;
+  background: url("../img/welcome-triangle.svg"), url("../img/mobile-header-welcome-gallery.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  padding-top: 52px;
 }

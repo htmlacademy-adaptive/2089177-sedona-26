@@ -1,0 +1,22 @@
+.likes {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.likes__button {
+  cursor: pointer;
+  width: 23px;
+  height: 21px;
+  border: none;
+  background: url("../img/icons/icon-like-button.svg");
+  background-repeat: no-repeat;
+}
+
+.likes__description {
+  margin: 0;
+  font-weight: bold;
+  padding: 10px 14px 0 14px;
+  padding-top: 10px;
+  padding-left: 14px;
+}
