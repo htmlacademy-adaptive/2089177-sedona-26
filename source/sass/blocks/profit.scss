@@ -2,6 +2,15 @@
   list-style: none;
   text-align: left;
   padding: 35px 20px 22px 20px;
+  grid-column: 1 / -1;
+  order: 3;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .profit---background {
@@ -12,6 +21,14 @@
 .profit__item {
   position: relative;
   padding: 0 0 30px 50px;
+
+  @include tablet {
+    padding: 156px 36px 59px 36px;
+  }
+
+  @include desctop {
+    padding: 156px 58px 59px 58px;
+  }
 }
 
 .profit__item::before {
@@ -19,27 +36,36 @@
   position: absolute;
   width: 40px;
   height: 38px;
+  top: -10px;
+  left: 1px;
+
+  @include tablet {
+    width: 76px;
+    height: 76px;
+    background-size: 75px 72px;
+    left: calc(50% - 38px);
+    top: 60px;
+  }
 }
 
 .profit__item--icon-housing::before {
   background-image: url("../img/icons/icon-house.svg");
   background-repeat: no-repeat;
-  top: -10px;
-  left: 3px;
 }
 
 .profit__item--icon-food::before {
   background-image: url("../img/icons/icon-burger.svg");
   background-repeat: no-repeat;
-  top: -10px;
-  left: 3px;
 }
 
 .profit__item--icon-souvenir::before {
   background-image: url("../img/icons/icon-gift.svg");
   background-repeat: no-repeat;
-  top: -10px;
   left: 5px;
+
+  @include tablet {
+    left: calc(50% - 38px);
+  }
 }
 
 .profit__title {

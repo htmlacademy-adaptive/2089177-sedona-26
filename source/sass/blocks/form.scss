@@ -1,20 +1,157 @@
 .form {
   padding: 0 20px 0 20px;
   margin: 0;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include desctop {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .form__item {
+  width: 100%;
   border: none;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 0;
+  position: relative;
+
+  @include tablet {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  @include desctop {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+}
+
+.form__item--position-contacts .form__title {
+  @include tablet {
+    text-align: left;
+    padding-left: 26px;
+  }
+
+  @include desctop {
+    padding-left: 94px;
+  }
+}
+
+.form__item--position-contacts .form__container {
+  @include tablet {
+    padding-left: 44px;
+  }
+
+  @include desctop {
+    padding-left: 64px;
+  }
+}
+
+.form__item--position-login .form__container {
+  @include tablet {
+    padding-right: 44px;
+  }
+
+  @include desctop {
+    padding-right: 64px;
+  }
+}
+
+.form__item--position-login::after {
+  @include tablet {
+    content: "";
+    right: 0;
+    bottom: -30px;
+    top: -30px;
+    width: 1px;
+    background-color: $gray-border;
+    position: absolute;
+  }
+}
+
+.form__item--position-impression {
+  @include tablet {
+    grid-column: span 2;
+  }
+}
+
+.form__item--position-impression .form__list {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  @include desctop {
+    padding-top: 28px;
+    grid-template-columns: repeat(3, 280px);
+  }
+}
+
+.form__item--position-attractions {
+  @include tablet {
+    grid-column: span 2;
+  }
+}
+
+.form__item--position-attractions .form__list {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    column-gap: 60px;
+  }
+
+  @include desctop {
+    padding-top: 42px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.form__item--position-emotions {
+  @include tablet {
+    grid-column: span 2;
+  }
 }
 
 .form__title {
+
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
   padding: 0 5px 4px 5px;
+}
+
+.form__title--border {
+  @include tablet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.form__title--border::before,
+.form__title--border::after {
+  @include tablet {
+    content: "";
+    width: 122px;
+    height: 1px;
+    background-color: $gray-border;
+  }
+
+  @include desctop {
+    width: 280px;
+  }
 }
 
 .form__container {
@@ -32,6 +169,7 @@
 }
 
 .form__input {
+  font-family: "PT Sans", sans-serif;
   border: none;
   min-height: 58px;
   background-color: $gray;
@@ -48,6 +186,7 @@
 }
 
 .form__textarea {
+  font-family: "PT Sans", sans-serif;
   width: 100%;
   background-color: $gray;
   border: none;
@@ -59,15 +198,6 @@
 }
 
 .form__button {
-  font-size: $mobile-font-title;
-  line-height: $mobile-height-title;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  color: #ffffff;
-  background-color: $blue;
-  padding: 14px 32px 14px 32px;
-  cursor: pointer;
   width: 281px;
 }
 
@@ -76,4 +206,8 @@
   text-align: right;
   font-size: 12px;
   line-height: 21px;
+
+  @include tablet {
+    margin-top: 19px;
+  }
 }

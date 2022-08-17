@@ -1,5 +1,24 @@
 .button {
-  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: $blue;
+  padding: 14px 32px 14px 32px;
+  cursor: pointer;
+}
+
+.button--play {
+  position: absolute;
+  cursor: pointer;
+  background: url("../img/icons/icon-play-button.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 55px;
+  border: none;
+  left: calc(50% - 20px);
+  bottom: calc(50% - 120px);
 }

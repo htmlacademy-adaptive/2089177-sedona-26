@@ -2,14 +2,27 @@
   position: relative;
 }
 
-.button--play {
-  position: absolute;
-  cursor: pointer;
-  background: url("../img/icons/icon-play-button.svg");
+.feedback__video {
+  width: 280px;
+  height: 177px;
+  background-image: url("../img/video-mobile.jpg");
   background-repeat: no-repeat;
-  width: 48px;
-  height: 55px;
-  border: none;
-  left: 144px;
-  bottom: 66px;
+  background-position: center;
+
+
+  @include tablet {
+    width: 648px;
+    height: 500px;
+    background-image: url("../img/video-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @include desctop {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/video-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

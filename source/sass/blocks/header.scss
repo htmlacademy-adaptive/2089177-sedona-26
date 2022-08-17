@@ -3,4 +3,12 @@
   width: 320px;
   height: 56px;
   z-index: 50;
+
+  @include tablet {
+    width: $tablet;
+  }
+
+  @include desctop {
+    width: $desctop;
+  }
 }

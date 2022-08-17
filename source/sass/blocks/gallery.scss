@@ -3,12 +3,38 @@
   padding: 0 20px;
   margin: 0;
   text-align: left;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+
+  @include desctop {
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
 
 .gallery__item {
   position: relative;
   padding-top: 24px;
   padding-bottom: 25px;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desctop {
+    position: relative;
+  }
+}
+
+.gallery__item:first-child {
+  @include tablet {
+    grid-column: 1 / -1;
+  }
 }
 
 .gallery__item::before {
@@ -19,6 +45,10 @@
   top: 0;
   left: -20px;
   right: -20px;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .gallery__item:last-child::after {
@@ -29,16 +59,71 @@
   bottom: 0;
   left: -20px;
   right: -20px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.gallery__item:not(:first-child):nth-child(odd) .gallery__wrapper {
+  @include tablet {
+    background-color: $gray-200;
+  }
+
+  @include desctop {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.gallery__img {
+  width: 100%;
+}
+
+.gallery__wrapper {
+  margin-top: 15px;
+
+  @include tablet {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 20px 20px;
+    background-color: $gray-100;
+  }
+
+  @include desctop {
+    position: absolute;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 15px 16px 13px 20px;
+  }
 }
 
 .gallery__title {
-  margin: 0;
-  padding-top: 15px;
+  font-weight: bold;
+  font-size: $mobile-font-subtitle;
+  line-height: $mobile-height-subtitle;
   color: $black;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include desctop {
+    color: $white;
+  }
 }
 
 .gallery__description {
   text-transform: none;
   margin: 0;
   padding-top: 15px;
+
+  @include tablet {
+    padding-top: 5px;
+  }
 }

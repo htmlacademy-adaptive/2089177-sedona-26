@@ -2,8 +2,67 @@
   text-align: center;
 }
 
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: advantages__subtitle;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .advantages__item {
   background-color: $gray;
+}
+
+.advantages__item--img {
+  display: grid;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+  }
+}
+
+.advantages__item--img::after {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  grid-column: span 2;
+}
+
+.advantages__item--img:nth-child(1)::after {
+  height: 260px;
+  background-image: url("../img/photo-city-mobile.jpg");
+
+  @include tablet {
+    background-image: url("../img/photo-city-tablet.jpg");
+    order: 1;
+  }
+
+  @include desctop {
+    background-image: url("../img/photo-city-desctop.jpg");
+  }
+}
+
+.advantages__item--img:nth-child(2)::after {
+  height: 260px;
+  background-image: url("../img/photo-brige-mobile.jpg");
+
+  @include tablet {
+
+    background-image: url("../img/photo-brige-tablet.jpg");
+    order: -1;
+  }
+
+  @include desctop {
+    background-image: url("../img/photo-brige-desctop.jpg");
+  }
 }
 
 .advantages__item--border {
@@ -22,11 +81,24 @@
 
 .advantages__item--padding {
   padding: 26px 18px;
+
+  @include tablet {
+    padding: 42px 34px 42px 33px;
+  }
 }
 
 .advantages__item--line {
   background: url("../img/mobile-welcome-triangle-bottom.svg");
   background-repeat: no-repeat;
+
+  @include tablet {
+    background: none;
+  }
+}
+
+.advantages__item--background {
+  background-color: $blue;
+  color: $white;
 }
 
 .advantages__title {
@@ -34,6 +106,15 @@
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
+
+  @include tablet {
+    padding: 0 15px;
+    font-size: $tablet-font-title;
+  }
+
+  @include desctop {
+    padding: 0 100px;
+  }
 }
 
 .advantages__subtitle {
@@ -46,10 +127,22 @@
 
 .advantages__title--padding {
   padding: 39px 16px 0 16px;
+
+  @include tablet {
+    padding: 41px 52px 14px 52px;
+  }
+
+  @include desctop {
+    padding: 47px 120px 14px 120px;
+  }
 }
 
 .advantages__subtitle--padding {
   padding: 15px 16px 35px 16px;
+
+  @include tablet {
+    padding: 0 32px 42px 32px;
+  }
 }
 
 .advantages__subtitle::before {
@@ -57,18 +150,6 @@
   counter-increment: advantages__subtitle;
   content: "— №" counter(advantages__subtitle) " —";
   padding-bottom: 17px;
-}
-
-.advantages__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  counter-reset: advantages__subtitle;
-}
-
-.advantages__item--background {
-  background-color: $blue;
-  color: $white;
 }
 
 .advantages__welcome-img {
