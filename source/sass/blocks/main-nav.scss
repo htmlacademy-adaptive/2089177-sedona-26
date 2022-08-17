@@ -120,6 +120,7 @@
     box-shadow: none;
   }
 }
+
 .main-nav__item:nth-child(4n-2) {
   @include tablet {
     margin-right: 20%;
