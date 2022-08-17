@@ -1,3 +1,14 @@
 .container--padding {
   padding-top: 32px;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.container--advantages-position {
+
+  @include tablet {
+    display: flex;
+  }
 }

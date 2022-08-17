@@ -5,6 +5,10 @@
   text-decoration: none;
   padding-bottom: 30px;
   color: $black;
+
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .copyright__item {

@@ -3,6 +3,10 @@ $blue: #81b3d2;
 $black: #000000;
 $white: #ffffff;
 $gray: #eeeeee;
+$gray-border:#dbdbdb;
+$gray-100:#f2f2f2;
+$gray-200:#eaeaea;
+
 
 // FONTS
 // mobile font-size
@@ -16,7 +20,15 @@ $mobile-height-title:26px;
 // tablet font-size
 $tablet-font-subtitle: 18px;
 $tablet-font-title: 21px;
+$tablet-font-title-max:30px;
 
 // desctop font-size
 $desctop-font-subtitle: 18px;
 $desctop-font-title: 21px;
+
+
+// screen size
+$mobile: 320px;
+$tablet: 768px;
+$desctop: 1200px;
+

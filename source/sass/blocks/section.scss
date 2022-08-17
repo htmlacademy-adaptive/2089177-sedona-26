@@ -1,17 +1,33 @@
 .section {
   padding: 35px 16px 28px 16px;
+
+  @include tablet {
+    padding: 55px 124px 28px 124px;
+  }
+
+  @include desctop {
+    padding: 55px 358px 28px 358px;
+  }
 }
 
 .section__title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
+
+  @include tablet {
+    font-size: $tablet-font-title-max;
+  }
+}
+
+.section__title--font-size {
+  font-size: $tablet-font-title;
 }
 
 .section__subtitle {
-  margin: 0;
-  padding: 30px 5px 0 5px;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
   font-weight: normal;
   font-size: $mobile-font-subtitle;
   line-height: $mobile-height-subtitle;

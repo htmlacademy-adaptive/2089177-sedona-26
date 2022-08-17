@@ -1,11 +1,33 @@
+.footer {
+  @include tablet {
+    padding-top: 76px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 35px;
+  }
+
+  @include desctop {
+    padding-top: 120px;
+  }
+}
+
 .footer__item {
   text-decoration: none;
   margin: 40px 0 33px 0;
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
+
+  @include tablet {
+    margin: 0;
+  }
 }
 
 .footer__social {
   margin-bottom: 40px;
+
+  @include tablet {
+    margin: 0;
+  }
 }
