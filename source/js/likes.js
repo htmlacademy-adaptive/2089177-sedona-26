@@ -1,4 +1,3 @@
-
 const onLikeButtonClick = () => {
 const likesSelector = document.querySelectorAll('.likes');
 const render = (counter, likeValueSelector) => likeValueSelector.innerText = counter;
@@ -17,6 +16,5 @@ likesSelector.forEach(likes => {
   });
 })
 };
-
 onLikeButtonClick();
 
