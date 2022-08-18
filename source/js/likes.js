@@ -17,4 +17,3 @@ likesSelector.forEach(likes => {
 })
 };
 onLikeButtonClick();
-
