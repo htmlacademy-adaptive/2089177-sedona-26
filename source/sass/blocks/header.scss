@@ -12,3 +12,12 @@
     width: $desctop;
   }
 }
+
+.header--nojs {
+  position: relative;
+  margin-bottom: 120px;
+
+  @include tablet {
+    margin: 0;
+  }
+}

@@ -79,6 +79,10 @@
   width: 100%;
 }
 
+.gallery__img:hover {
+  opacity: 0.8;
+}
+
 .gallery__wrapper {
   margin-top: 15px;
 
@@ -115,6 +119,14 @@
 
   @include desctop {
     color: $white;
+  }
+}
+
+.gallery__title:hover {
+  color: $gray-300;
+
+  @include tablet {
+    color: $blue-200;
   }
 }
 

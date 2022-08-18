@@ -31,6 +31,14 @@
   }
 }
 
+.main-nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
+
 .main-nav--close .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -79,6 +87,19 @@
   padding-bottom: 0;
 }
 
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__logo {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+
 .main-nav__list {
   list-style-type: none;
   padding: 0;
@@ -124,6 +145,26 @@
 .main-nav__item:nth-child(4n-2) {
   @include tablet {
     margin-right: 20%;
+  }
+}
+
+.main-nav__item a:hover {
+  background-color: $blue-100;
+
+  @include tablet {
+    color: $blue-50;
+    background-color: transparent;
+  }
+}
+
+.main-nav__item a:active {
+  color: rgba($white, 0.3);
+  background-color: $blue-200;
+
+  @include tablet {
+    color: $black;
+    opacity: 0.3;
+    background-color: transparent;
   }
 }
 

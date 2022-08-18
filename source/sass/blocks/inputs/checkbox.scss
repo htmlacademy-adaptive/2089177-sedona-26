@@ -12,12 +12,45 @@
   width: 46px;
   height: 46px;
   background-color: $gray;
+  opacity: 0;
+  margin: 0;
 }
 
 .checkbox__subtitle {
+  position: relative;
   text-transform: none;
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
   padding-left: 16px;
+}
+
+.checkbox__input + label::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  top: -15px;
+  left: -52px;
+  background-color: $gray-100;
+}
+
+.checkbox__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/icons/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox__input:hover + label::before {
+  background-color: $gray-400;
+}
+
+.checkbox__input:checked + label:active::after {
+  opacity: 0.3;
 }
