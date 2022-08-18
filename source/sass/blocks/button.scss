@@ -22,3 +22,17 @@
   left: calc(50% - 20px);
   bottom: calc(50% - 120px);
 }
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $blue-200;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $blue-100;
+}
+
+.likes__button--add {
+  background-color: $black;
+}

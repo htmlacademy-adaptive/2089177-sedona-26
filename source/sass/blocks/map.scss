@@ -1,7 +1,14 @@
-.map iframe {
-  border: none;
+.map {
+  display: block;
+  width: 100%;
+  height: 350px;
+  background: url("../img/map-mobile.jpg") no-repeat;
 
   @include tablet {
-    width: 100%;
+    background: url("../img/map-tablet.jpg") no-repeat;
+  }
+
+  @include desctop {
+    background: url("../img/map-desktop.jpg") no-repeat;
   }
 }

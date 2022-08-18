@@ -170,13 +170,38 @@
 
 .form__input {
   font-family: "PT Sans", sans-serif;
-  border: none;
-  min-height: 58px;
+  min-height: 54px;
   background-color: $gray;
   padding-left: 16px;
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
+  border: 4px solid $gray;
+}
+
+.form__input:hover {
+  background-color: $gray-400;
+  border: 4px solid $gray-400;
+}
+
+.form__input:active {
+  background-color: inherit;
+  border: 4px solid $gray-400;
+  outline: none;
+}
+
+.form__input--icon-telephone {
+  background-image: url("../img/icons/icon-phone.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%, 0 0;
+  padding-right: 58px;
+}
+
+.form__input--icon-mail {
+  background-image: url("../img/icons/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%, 0 0;
+  padding-right: 58px;
 }
 
 .form__list {
@@ -195,6 +220,11 @@
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
+  resize: none;
+}
+
+.form__textarea:hover {
+  background-color: $gray-400;
 }
 
 .form__button {
