@@ -18,7 +18,7 @@
     background-position: center;
   }
 
-  @include desctop {
+  @include desktop {
     width: 800px;
     height: 500px;
     background-image: url("../img/video-desktop.jpg");

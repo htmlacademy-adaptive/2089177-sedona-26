@@ -55,11 +55,11 @@
     order: 1;
   }
 
-  @include desctop {
+  @include desktop {
     @include retina {
-      background-image: url("../img/photo-city-desctop@2x.jpg");
+      background-image: url("../img/photo-city-desktop@2x.jpg");
     }
-    background-image: url("../img/photo-city-desctop.jpg");
+    background-image: url("../img/photo-city-desktop.jpg");
   }
 }
 
@@ -79,11 +79,11 @@
     order: -1;
   }
 
-  @include desctop {
+  @include desktop {
     @include retina {
-      background-image: url("../img/photo-brige-desctop@2x.jpg");
+      background-image: url("../img/photo-brige-desktop@2x.jpg");
     }
-    background-image: url("../img/photo-brige-desctop.jpg");
+    background-image: url("../img/photo-brige-desktop.jpg");
   }
 }
 
@@ -134,7 +134,7 @@
     font-size: $tablet-font-title;
   }
 
-  @include desctop {
+  @include desktop {
     padding: 0 100px;
   }
 }
@@ -154,7 +154,7 @@
     padding: 41px 52px 14px 52px;
   }
 
-  @include desctop {
+  @include desktop {
     padding: 47px 120px 14px 120px;
   }
 }
