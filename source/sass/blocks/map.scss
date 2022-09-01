@@ -8,7 +8,7 @@
     background: url("../img/map-tablet.jpg") no-repeat;
   }
 
-  @include desctop {
+  @include desktop {
     background: url("../img/map-desktop.jpg") no-repeat;
   }
 }

@@ -9,7 +9,7 @@
     padding-right: 60px;
   }
 
-  @include desctop {
+  @include desktop {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -28,7 +28,7 @@
     margin-bottom: 25px;
   }
 
-  @include desctop {
+  @include desktop {
     margin-top: 25px;
     margin-bottom: 35px;
   }
@@ -40,7 +40,7 @@
     padding-left: 26px;
   }
 
-  @include desctop {
+  @include desktop {
     padding-left: 94px;
   }
 }
@@ -50,7 +50,7 @@
     padding-left: 44px;
   }
 
-  @include desctop {
+  @include desktop {
     padding-left: 64px;
   }
 }
@@ -60,7 +60,7 @@
     padding-right: 44px;
   }
 
-  @include desctop {
+  @include desktop {
     padding-right: 64px;
   }
 }
@@ -91,7 +91,7 @@
     gap: 16px;
   }
 
-  @include desctop {
+  @include desktop {
     padding-top: 28px;
     grid-template-columns: repeat(3, 280px);
   }
@@ -111,7 +111,7 @@
     column-gap: 60px;
   }
 
-  @include desctop {
+  @include desktop {
     padding-top: 42px;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -149,7 +149,7 @@
     background-color: $gray-border;
   }
 
-  @include desctop {
+  @include desktop {
     width: 280px;
   }
 }

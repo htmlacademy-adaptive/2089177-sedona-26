@@ -16,7 +16,7 @@
   background: url("../img/icons/icon-like-button.svg");
   background-repeat: no-repeat;
 
-  @include desctop {
+  @include desktop {
     background: url("../img/icons/icon-like-button-white.svg");
     background-repeat: no-repeat;
   }
@@ -26,7 +26,7 @@
   background: url("../img/icons/icon-like-button-hover.svg");
   background-repeat: no-repeat;
 
-  @include desctop {
+  @include desktop {
     background: url("../img/icons/icon-like-active.svg");
     background-repeat: no-repeat;
   }

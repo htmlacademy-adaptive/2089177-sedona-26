@@ -32,13 +32,13 @@
     @include haider-img-position;
   }
 
-  @include desctop {
+  @include desktop {
     @include retina {
-      background: url("../img/welcome-triangle.svg"), url("../img/desctop-header-welcome@2x.jpg");
+      background: url("../img/welcome-triangle.svg"), url("../img/desktop-header-welcome@2x.jpg");
 
       @include haider-img-position;
     }
-    background: url("../img/welcome-triangle.svg"), url("../img/desctop-header-welcome.jpg");
+    background: url("../img/welcome-triangle.svg"), url("../img/desktop-header-welcome.jpg");
 
     @include haider-img-position;
   }
@@ -86,7 +86,7 @@
     @include haider-img-position;
   }
 
-  @include desctop {
+  @include desktop {
     @include retina {
       height: 290px;
       background: url("../img/welcome-triangle.svg"), url("../img/tablet-header-welcome@2x.jpg");
@@ -94,7 +94,7 @@
       @include haider-img-position;
     }
     height: 290px;
-    background: url("../img/welcome-triangle.svg"), url("../img/desctop-header-welcome.jpg");
+    background: url("../img/welcome-triangle.svg"), url("../img/desktop-header-welcome.jpg");
 
     @include haider-img-position;
   }
