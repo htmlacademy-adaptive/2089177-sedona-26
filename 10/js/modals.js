@@ -1,0 +1,1 @@
+let modalElement=document.querySelector(".modal");const modalSucccessElement=document.querySelector(".modal__wrapper--success"),modalFailureElement=document.querySelector(".modal__wrapper--failure"),onSendButtonClick=e=>{e.preventDefault()};

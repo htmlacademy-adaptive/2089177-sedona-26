@@ -1,0 +1,1 @@
+const onLikeButtonClick=()=>{const t=document.querySelectorAll(".likes"),e=(t,e)=>e.innerText=t;t.forEach((t=>{const c=t.querySelector(".likes__button"),n=t.querySelector(".likes__description");let i=n.textContent;c.addEventListener("click",(()=>{c.classList.contains("likes__button--click")?e(--i,n):e(++i,n),c.classList.toggle("likes__button--click")}))}))};onLikeButtonClick();
