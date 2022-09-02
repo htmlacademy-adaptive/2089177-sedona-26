@@ -11,6 +11,7 @@
   margin-right: 6px;
 }
 
+
 .social__link {
   display: flex;
   justify-content: center;
@@ -18,30 +19,6 @@
   width: 48px;
   height: 48px;
   background-color: $blue;
-}
-
-.social__link--icon-vk::before {
-  background-image: url("../img/icons/icon-vk.svg");
-  width: 24px;
-  height: 14px;
-}
-
-.social__link--icon-tele::before {
-  background-image: url("../img/icons/icon-tele.svg");
-  width: 22px;
-  height: 18px;
-}
-
-.social__link--icon-ytb::before {
-  background-image: url("../img/icons/icon-ytb.svg");
-  width: 20px;
-  height: 14px;
-}
-
-.social__link::before {
-  content: "";
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .social__link:hover {
@@ -52,15 +29,6 @@
   background-color: $blue-200;
 }
 
-.social__link:active::before {
+.social__link:active .social__icon {
   opacity: 0.3;
-}
-
-.social__icon {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
