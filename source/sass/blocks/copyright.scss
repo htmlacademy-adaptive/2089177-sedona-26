@@ -14,12 +14,14 @@
 .copyright__item {
   padding: 10px 10px 10px 10px;
 }
-
+.copyright__icon{
+  fill: $black;
+}
 .copyright:hover .copyright__item {
   color: $blue;
 }
 
-.copyright:hover .copyright__logo {
+.copyright:hover .copyright__icon {
   fill: $blue;
 }
 
@@ -28,6 +30,6 @@
   color: $gray-50;
 }
 
-.copyright:active .copyright__logo {
+.copyright:active .copyright__icon {
   fill: $gray-50;
 }
