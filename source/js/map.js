@@ -1,10 +1,10 @@
-const mapElement = document.querySelector(".map")
+const mapElement = document.querySelector('.map')
 
 const initMap = () => {
   if(mapElement){
     const latLng = new google.maps.LatLng(34.868633, -111.761734);
     const mapMarker = {
-      url: "img/icons/icon-map-marker.svg",
+      url: 'img/icons/icon-map-marker.svg',
       size: new google.maps.Size(27, 27),
     };
     const mapOptions = {
@@ -17,7 +17,7 @@ const initMap = () => {
       scrollwheel: false,
       disableDefaultUI: true,
     };
-    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    const map = new google.maps.Map(document.getElementById('map'), mapOptions);
     const marker = new google.maps.Marker({
       map: map,
       position: latLng,

@@ -11,7 +11,7 @@
   position: absolute;
   width: 185px;
   height: 96px;
-  left: calc(50% - 90px);
+  left: calc(50% - 91px);
   margin-bottom: -60px;
 }
 
@@ -19,7 +19,8 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  left: calc(90% - 20px);
+  left: calc(90% - 28px);
+  top: 2px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -42,7 +43,7 @@
 .main-nav--close .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: calc(50% - 2px);
+  top: calc(50% - 4px);
   right: calc(50% - 12px);
   width: 23px;
   height: 4px;
@@ -173,7 +174,7 @@
   position: relative;
   display: block;
   font-weight: bold;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-bottom: 15px;
   text-align: center;
   line-height: 24px;

@@ -1,12 +1,49 @@
 .section {
-  padding: 35px 16px 28px 16px;
+  padding: 35px 10px 20px 10px;
 
   @include tablet {
-    padding: 55px 124px 28px 124px;
+    padding: 49px 125px 54px 124px;
   }
 
   @include desktop {
-    padding: 55px 358px 28px 358px;
+    padding: 60px 358px 45px 358px;
+  }
+}
+
+.section--padding {
+  padding: 35px 17px 10px 10px;
+
+  @include tablet {
+    padding: 35px 17px 20px 10px;
+  }
+}
+
+.section--padding-form {
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+
+.section--padding-gallery {
+  padding: 8px 10px 23px 10px;
+
+  @include desktop {
+    padding: 35px 17px 78px 10px;
+  }
+}
+
+.section--padding-gallery-feedback {
+  padding: 20px 10px 39px 10px;
+
+  @include tablet {
+    padding: 57px 10px 93px 10px;
+  }
+  @include desktop {
+    padding: 60px 10px 89px 10px;
   }
 }
 
@@ -17,12 +54,67 @@
   line-height: $mobile-height-title;
 
   @include tablet {
-    font-size: $tablet-font-title-max;
+    font-size: $desktop-font-title;
+  }
+
+  @include desktop {
+    font-size: $desktop-font-title;
+  }
+}
+
+.section__title--padding-gallery {
+  padding-top: 31px;
+
+  @include tablet {
+    padding-top: 58px;
+  }
+  @include desktop {
+    padding-top: 62px;
+    padding-left: 7px;
   }
 }
 
 .section__title--font-size {
   font-size: $tablet-font-title;
+
+  @include tablet {
+
+    font-size: $tablet-font-title-max;
+  }
+}
+
+.section__title--gallery-font-size {
+  font-size: $mobile-font-title;
+
+  @include tablet {
+    font-size: $tablet-font-title-max;
+  }
+}
+
+.section__title--fontsize-form {
+  @include tablet {
+    font-size: $tablet-font-title-max;
+  }
+}
+
+.section__title--padding-form {
+  @include tablet {
+    padding-top: 14px;
+    padding-bottom: 24px;
+  }
+
+  @include desktop {
+    padding-top: 12px;
+    padding-bottom: 33px;
+  }
+}
+
+.section__title--padding-top {
+  padding-top: 6px;
+
+  @include tablet {
+    padding-top: 26px;
+  }
 }
 
 .section__subtitle {
@@ -31,14 +123,88 @@
   font-weight: normal;
   font-size: $mobile-font-subtitle;
   line-height: $mobile-height-subtitle;
+
+  @include tablet {
+    padding: 28px 0 0 0;
+  }
+
 }
 
-.section__button {
-  margin: 30px 0 40px 0;
+.section__title--gallery-fontsize {
+  font-size: $mobile-font-title;
+  @include tablet {
+    font-size: $tablet-font-title-max;
+  }
+
+  @include desktop {
+    font-size: $tablet-font-title-max;
+  }
+}
+
+.section__subtitle--padding {
+  padding: 31px 0 0 0;
+}
+.section__subtitle--padding-top {
+  padding: 20px 0 0 0;
+
+  @include tablet {
+    padding: 33px 0 0 0;
+  }
+}
+
+.section__subtitle--gallery-padding {
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  @include tablet {
+    padding-top: 33px;
+    padding-bottom: 56px;
+  }
+
+  @include desktop {
+    padding-top: 33px;
+    padding-bottom: 10px;
+  }
+}
+
+.section__subtitle--padding-form {
+  padding-top: 24px;
+  padding-bottom: 5px;
+
+  @include tablet {
+   padding: 0;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.section__subtitle--padding-feedback{
+  padding: 27px 0 0 0;
+
+  @include desktop {
+    padding: 31px 0 0 0;
+  }
+}
+
+.section__link {
+
+  display: block;
+  margin: 30px auto 40px auto;
   text-transform: uppercase;
   border: none;
   color: $white;
-  width: 100%;
+  width: 284px;
   min-height: 58px;
   background-color: $blue;
+
+  @include tablet {
+    width: 460px;
+    margin: 40px auto 40px auto;
+  }
+
+  @include desktop {
+    margin: 45px auto 45px auto;
+  }
 }

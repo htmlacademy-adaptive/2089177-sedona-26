@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/16.png">
-    <link rel="apple-touch-icon" href="img/favicons/32.png">
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="preload" href="./css/normalize.css" as="style">
-    <link rel="preload" href="./css/fonts/ptsans.woff2" as="font">
-    <link rel="preload" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXifKuBZ-1q7SqKmz6YlpLrJ5p1DNztDU" as="script"></link>
-    <link rel="preload" src="js/main.js" type="module" as="script"></link>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <title>Галерея</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/16.png">
+  <link rel="apple-touch-icon" href="img/favicons/32.png">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="preload" href="./css/normalize.css" as="style">
+  <link rel="preload" href="./css/fonts/ptsans.woff2" as="font">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <title>Галерея</title>
+</head>
 
 <body class="body">
   <div class="wrapper">
-    <header class="header">
-      <nav class="main-nav main-nav--close">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo--img" src="img/sedona-logo.svg" width="185" height="96"
+    <header class="header header--nojs">
+      <nav class="main-nav main-nav--close main-nav--nojs">
+        <a class="main-nav__logo" href="index.html">
+          <img src="img/sedona-logo.svg" width="185" height="96"
             alt="Седона — небольшой городок в Аризоне.">
         </a>
         <button class="main-nav__toggle" type="button">
@@ -47,13 +45,13 @@
     </header>
 
     <main class="content">
-      <div class="content__img--position">
+      <div class="content__img content__img--position">
         <img class="content__welcome-title content__welcome-title--position "
-          src="img/mobile-header-welcome-title-gallery.svg" width="282" height="214" alt="Добро пожаловать">
+          src="img/mobile-header-welcome-title-gallery.svg" width="229" height="39" alt="Добро пожаловать">
       </div>
-      <section class="section">
-        <h1 class="section__title">фото и видео</h1>
-        <p class="section__subtitle">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о
+      <section class="section section--padding-gallery">
+        <h1 class="section__title section__title--padding-gallery section__title--gallery-fontsize">фото и видео</h1>
+        <p class="section__subtitle section__subtitle--gallery-padding">не можете решиться на путешествие&nbsp;<br class="br br--mobile"> из-за курса?&nbsp;<br class="br br--tablet"><br class="br br--desktop"> фотографии помогут вам забыть о
           политике и экономике.</p>
       </section>
       <section class="gallery">
@@ -62,12 +60,16 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-1.webp 1x, img/gallery-photo-desktop-1@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"srcset="img/gallery-photo-tablet-1.webp 1x, img/gallery-photo-tablet-1@2x.webp 2x">
-                <source type="image/webp"srcset="img/gallery-photo-mobile-1.webp, img/gallery-photo-mobile-1@2x.webp">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-1.webp 1x, img/gallery-photo-desktop-1@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-1.webp 1x, img/gallery-photo-tablet-1@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-photo-mobile-1.webp">
 
-                <source media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-1.jpg, img/gallery-photo-desktop-1@2x.jpg 2x">
-                <source media="(min-width: 768px)"srcset="img/gallery-photo-tablet-1.jpg, img/gallery-photo-tablet-1@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-1.jpg, img/gallery-photo-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-1.jpg, img/gallery-photo-tablet-1@2x.jpg 2x">
                 <img class="gallery__img" src="img/gallery-photo-mobile-1.jpg" width="280" height="280"
                   alt="дорога на закате">
               </picture>
@@ -78,7 +80,7 @@
                 <p class="gallery__description">Автор фото: Борис</p>
               </div>
               <div class="likes">
-                <button class="likes__button" type="button"></button>
+                <button name ="Поставить лайк" class="likes__button" type="button"></button>
                 <p class="likes__description">1350</p>
               </div>
             </div>
@@ -86,23 +88,27 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-2.webp 1x, img/gallery-photo-desktop-2@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"srcset="img/gallery-photo-tablet-2.webp 1x, img/gallery-photo-tablet-2@2x.webp 2x">
-                <source type="image/webp"srcset="img/gallery-photo-mobile-2.webp, img/gallery-photo-mobile-2@2x.webp">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-2.webp 1x, img/gallery-photo-desktop-2@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-2.webp 1x, img/gallery-photo-tablet-2@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-photo-mobile-2.webp">
 
-                <source media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-2.jpg, img/gallery-photo-desktop-2@2x.jpg 2x">
-                <source media="(min-width: 768px)"srcset="img/gallery-photo-tablet-2.jpg, img/gallery-photo-tablet-2@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-2.jpg, img/gallery-photo-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-2.jpg, img/gallery-photo-tablet-2@2x.jpg 2x">
                 <img class="gallery__img" src="img/gallery-photo-mobile-2.jpg" width="280" height="280"
                   alt="дорога на закате">
               </picture>
             </a>
             <div class="gallery__wrapper">
-              <div class="container">
-                <a class="gallery__title" href="#">местная растительность</a>
+              <div class="container ">
+                <a class="gallery__title " href="#">местная растительность</a>
                 <p class="gallery__description">Автор фото: Сергей</p>
               </div>
               <div class="likes">
-                <button class="likes__button" type="button"></button>
+                <button name ="Поставить лайк" class="likes__button" type="button"></button>
                 <p class="likes__description">143</p>
               </div>
             </div>
@@ -110,12 +116,16 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-3.webp 1x, img/gallery-photo-desktop-3@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"srcset="img/gallery-photo-tablet-3.webp 1x, img/gallery-photo-tablet-3@2x.webp 2x">
-                <source type="image/webp"srcset="img/gallery-photo-mobile-3.webp, img/gallery-photo-mobile-3@2x.webp">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-3.webp 1x, img/gallery-photo-desktop-3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-3.webp 1x, img/gallery-photo-tablet-3@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-photo-mobile-3.webp">
 
-                <source media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-3.jpg, img/gallery-photo-desktop-2@2x.jpg 2x">
-                <source media="(min-width: 768px)"srcset="img/gallery-photo-tablet-3.jpg, img/gallery-photo-tablet-2@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-3.jpg, img/gallery-photo-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-3.jpg, img/gallery-photo-tablet-2@2x.jpg 2x">
                 <img class="gallery__img" src="img/gallery-photo-mobile-3.jpg" width="280" height="280"
                   alt="дорога на закате">
               </picture>
@@ -126,7 +136,7 @@
                 <p class="gallery__description">Автор фото: Петр</p>
               </div>
               <div class="likes">
-                <button class="likes__button" type="button"></button>
+                <button name ="Поставить лайк" class="likes__button" type="button"></button>
                 <p class="likes__description">96</p>
               </div>
             </div>
@@ -134,12 +144,16 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-4.webp 1x, img/gallery-photo-desktop-4@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"srcset="img/gallery-photo-tablet-4.webp 1x, img/gallery-photo-tablet-4@2x.webp 2x">
-                <source type="image/webp"srcset="img/gallery-photo-mobile-4.webp, img/gallery-photo-mobile-4@2x.webp">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-4.webp 1x, img/gallery-photo-desktop-4@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-4.webp 1x, img/gallery-photo-tablet-4@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-photo-mobile-4.webp">
 
-                <source media="(min-width: 1200px)"srcset="img/gallery-photo-desktop-4.jpg, img/gallery-photo-desktop-2@2x.jpg 2x">
-                <source media="(min-width: 768px)"srcset="img/gallery-photo-tablet-4.jpg, img/gallery-photo-tablet-2@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery-photo-desktop-4.jpg, img/gallery-photo-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery-photo-tablet-4.jpg, img/gallery-photo-tablet-2@2x.jpg 2x">
                 <img class="gallery__img" src="img/gallery-photo-mobile-4.jpg" width="280" height="280"
                   alt="дорога на закате">
               </picture>
@@ -151,7 +165,7 @@
                 <p class="gallery__description">Автор фото: Антон</p>
               </div>
               <div class="likes">
-                <button class="likes__button" type="button"></button>
+                <button name ="Поставить лайк" class="likes__button" type="button"></button>
                 <p class="likes__description">254</p>
               </div>
             </div>
@@ -160,17 +174,17 @@
       </section>
       <section class="feedback">
         <h2 class="visually-hidden">Посмотрите видео о Седоне!</h2>
-        <section class="section">
-          <h2 class="section__title">все еще сомневаетесь?</h2>
-          <p class="section__subtitle">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+        <section class="section section--padding-gallery-feedback">
+          <h2 class="section__title section__title--font-size section__title--gallery-font-size">все еще сомневаетесь?</h2>
+          <p class="section__subtitle section__subtitle--padding-feedback">смотрите видеопрезентацию и&nbsp;<br class="br br--mobile"> скорее за билетами, пока они&nbsp;<br class="br br--tablet"><br class="br br--desktop"> не&nbsp;<br class="br br--mobile"> подорожали в
             очередной
             раз!</p>
         </section>
 
-        <video class="feedback__video" src="">
+        <video class="feedback__video" src="#">
         </video>
 
-        <button class="feedback__button button--play" type="button"></button>
+        <button name ="Включить видео о седоне" class="feedback__button button--play" type="button"></button>
       </section>
     </main>
 
@@ -206,7 +220,7 @@
           </li>
         </ul>
       </div>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright copyright--position-index" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__item">разработано</span>
         <span class="visually-hidden">в HTML Academy</span>
         <svg class="copyright__icon copyright__icon--academy" width="50" height="50">
@@ -215,7 +229,7 @@
       </a>
     </footer>
   </div>
-  <script defer src="js/main.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

@@ -37,6 +37,19 @@
   }
 }
 
+.gallery__item:nth-child(3) {
+  padding-top: 30px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  @include desktop {
+    padding-top: 0;
+  }
+
+}
+
 .gallery__item::before {
   position: absolute;
   content: "";
@@ -92,7 +105,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px 20px 20px;
+    padding: 20px 17px 15px 20px;
     background-color: $gray-100;
   }
 
@@ -103,7 +116,6 @@
     bottom: 0;
     width: 100%;
     z-index: 3;
-    padding: 15px 16px 13px 20px;
   }
 }
 
@@ -122,6 +134,8 @@
   }
 }
 
+
+
 .gallery__title:hover {
   color: $gray-300;
 
@@ -133,9 +147,14 @@
 .gallery__description {
   text-transform: none;
   margin: 0;
-  padding-top: 15px;
+  font-size: $mobile-font-subtitle;
 
   @include tablet {
     padding-top: 5px;
+  }
+
+  @include desktop {
+    padding-top: 1px;
+    padding-bottom: 5px;
   }
 }

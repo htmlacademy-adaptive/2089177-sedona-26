@@ -1,7 +1,7 @@
 .likes {
   display: flex;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 14px;
 
   @include tablet {
     padding: 0;
@@ -15,6 +15,10 @@
   border: none;
   background: url("../img/icons/icon-like-button.svg");
   background-repeat: no-repeat;
+
+  @include tablet {
+    margin-top: -10px;
+  }
 
   @include desktop {
     background: url("../img/icons/icon-like-button-white.svg");
@@ -32,6 +36,10 @@
   }
 }
 
+.likes__button--add {
+  background-color: $black;
+}
+
 .likes__button--click {
   background: url("../img/icons/icon-like-active.svg");
   background-repeat: no-repeat;
@@ -41,4 +49,8 @@
   margin: 0;
   font-weight: bold;
   padding: 5px 14px 0 14px;
+
+  @include tablet {
+    padding: 0 0 0 10px;
+  }
 }
