@@ -3,20 +3,40 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   color: $black;
+
 
   @include tablet {
     padding: 0;
   }
 }
 
+.copyright--position-index {
+  margin-top: -4px;
+}
+
 .copyright__item {
-  padding: 10px 10px 10px 10px;
+  font-size: $mobile-font-subtitle;
+  padding-left: 5px;
+
+  @include tablet {
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+
+  @include desktop {
+    padding-top: 2px;
+    padding-left: 40px;
+  }
 }
 
 .copyright__icon {
+  margin-top: 5px;
+  margin-left: 5px;
   fill: $black;
+  width: 43px;
+  height: 43px;
 }
 
 .copyright:hover .copyright__item {

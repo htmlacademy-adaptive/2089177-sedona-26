@@ -30,7 +30,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp server",
+    "start": "gulp start",
     "clean": "gulp clean",
     "default": "gulp default"
   },

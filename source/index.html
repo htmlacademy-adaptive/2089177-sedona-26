@@ -11,8 +11,6 @@
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="preload" href="./css/normalize.css" as="style">
   <link rel="preload" href="./css/fonts/ptsans.woff2" as="font">
-  <link rel="preload" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXifKuBZ-1q7SqKmz6YlpLrJ5p1DNztDU" as="script"></link>
-  <link rel="preload" src="js/main.js" type="module" as="script"></link>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
 
@@ -21,10 +19,10 @@
 
 <body class="body">
   <div class="wrapper">
-    <header class="header">
-      <nav class="main-nav main-nav--close">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo--img" src="img/sedona-logo.svg" width="185" height="96"
+    <header class="header header--nojs">
+      <nav class="main-nav main-nav--close main-nav--nojs">
+        <a class="main-nav__logo" href="index.html">
+          <img src="img/sedona-logo.svg" width="185" height="96"
             alt="Седона — небольшой городок в Аризоне.">
         </a>
         <button class="main-nav__toggle" type="button">
@@ -55,59 +53,59 @@
       <section class="advantages">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <section class="section">
-          <h2 class="section__title section__title--font-size"> седона — небольшой городок в аризоне, заслуживающий
+          <h2 class="section__title"> седона — небольшой&nbsp;<br class="br br--mobile"> городок в аризоне, заслуживающий
             большего!</h2>
-          <p class="section__subtitle">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+          <p class="section__subtitle section__subtitle--padding">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </section>
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--background advantages__item--line advantages__item--img">
             <div class="container container--padding ">
               <h2 class="advantages__title advantages__title--padding">настоящий городок</h2>
-              <p class="advantages__subtitle advantages__subtitle--padding">седона не атракцион для туристов, там течет
+              <p class="advantages__subtitle advantages__subtitle--padding">седона не атракцион для туристов,&nbsp;<br class="br br--desktop"> там течет
                 своя жизнь</p>
             </div>
             <ul class="profit profit---background">
               <li class="profit__item profit__item--icon-housing ">
                 <h3 class="profit__title">жилье</h3>
-                <p class="profit__subtitle">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="profit__subtitle">рекомендуем пожить в настоящем&nbsp;<br class="br br--desktop "> мотеле, все&nbsp; <br class="br br--tablet "> как в кино!</p>
               </li>
               <li class="profit__item profit__item--icon-food">
                 <h3 class="profit__title">еда</h3>
-                <p class="profit__subtitle">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="profit__subtitle">всегда заказывайте фирменный бургер,&nbsp;<br class="br br--tablet"><br class="br br--desktop"> вы не разочаруетесь!</p>
               </li>
               <li class="profit__item profit__item--icon-souvenir ">
                 <h3 class="profit__title">сувениры</h3>
-                <p class="profit__subtitle">не только китайского, но и местного производства!</p>
+                <p class="profit__subtitle">не только китайского,&nbsp;<br class="br br--desktop"> но и местного производства!</p>
               </li>
             </ul>
           </li>
 
           <li class="advantages__item advantages__item--background advantages__item--img">
             <div class="container container--background-color">
-              <h3 class="advantages__title advantages__title--padding ">там есть мост дьявола</h3>
-              <p class="advantages__subtitle advantages__subtitle--padding">да, по нему можно пройти! если вы
+              <h3 class="advantages__title advantages__title--padding ">там есть&nbsp;<br class="br br--desktop"><br class="br br--tablet"> мост дьявола</h3>
+              <p class="advantages__subtitle advantages__subtitle--padding advantages__subtitle--padding-bottom">да, по нему можно пройти!&nbsp;<br class="br br--desktop"> если вы
                 осмелитесь,конечно</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--padding">
             <h3 class="advantages__title ">небольшая площадь</h3>
-            <p class="advantages__subtitle">все интересные места находятся очень близко</p>
+            <p class="advantages__subtitle">все интересные места находятся&nbsp;<br class="br br--mobile"> очень близко</p>
           </li>
           <li class="advantages__item advantages__item--padding advantages__item--border">
             <h3 class="advantages__title">красивая дорога</h3>
-            <p class="advantages__subtitle">ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="advantages__subtitle">ехать в седону из&nbsp;<br class="br br--tablet"> лас-вегаса&nbsp;<br class="br br--mobile"> совсем&nbsp;<br class="br br--desktop"><br class="br br--tablet">не скучно!</p>
           </li>
           <li class="advantages__item advantages__item--padding advantages__item--border">
             <h3 class="advantages__title">мало туристов</h3>
-            <p class="advantages__subtitle">большинство едет в гранд каньон и толпится там</p>
+            <p class="advantages__subtitle">большинство едет в&nbsp;<br class="br br--tablet"> гранд каньон и&nbsp;<br class="br br--desktop"><br class="br br--tablet"> толпится там</p>
           </li>
         </ol>
       </section>
-      <section class="section">
-        <h2 class="section__title">заинтересовались?</h2>
-        <p class="section__subtitle">укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
+      <section class="section section--padding ">
+        <h2 class="section__title section__title--padding-top section__title--font-size">заинтересовались?</h2>
+        <p class="section__subtitle section__subtitle--padding-top">укажите предполагаемые даты поездки,&nbsp;<br class="br br--tablet"><br class="br br--desktop">и мы покажем вам лучшие предложения гостиниц в
           седоне</p>
-        <button class="section__button button">Найти гостиницу</button>
+        <a class="section__link button button--padding-index " href="#">Найти гостиницу</a>
       </section>
 
       <section class="map" id="map">
@@ -146,7 +144,7 @@
           </li>
         </ul>
       </div>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright copyright--position-index" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__item">разработано</span>
         <span class="visually-hidden">в HTML Academy</span>
         <svg class="copyright__icon copyright__icon--academy" width="50" height="50">
@@ -157,7 +155,7 @@
 
   </div>
   <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXifKuBZ-1q7SqKmz6YlpLrJ5p1DNztDU"></script>
-  <script defer src="js/main.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

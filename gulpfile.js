@@ -131,7 +131,6 @@ export  const server = (done) => {
   }
 
   // Build
-
   export const build = gulp.series(
   clean,
   copy,
@@ -146,8 +145,25 @@ export  const server = (done) => {
   ),
   );
 
-  // Default
+  // Build + Server
+  export const start = gulp.series(
+    clean,
+    copy,
+    optimizeImages,
+    gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+    ),
+    gulp.series(
+      server,
+      watcher
+      ));
 
+  // Default + Server
   export default gulp.series(
   clean,
   copy,

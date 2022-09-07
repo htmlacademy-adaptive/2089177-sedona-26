@@ -42,23 +42,23 @@
 }
 
 .modal__block {
-  padding: 38px 39px 29px 37px;
+  padding: 38px 39px 43px 37px;
 }
 
 .modal__block--success {
   @include tablet {
-    margin-bottom: 32px;
-    padding-top: 55px;
+    padding-top: 47px;
   }
 }
 
 .modal__title {
   margin: 0;
   margin-bottom: 26px;
+  font-size: 18px;
 
   @include tablet {
-    margin-bottom: 31px;
-    font-size: 30px;
+    margin-bottom: 20px;
+    font-size: $tablet-font-title-max;
   }
 }
 
@@ -66,7 +66,6 @@
   @include tablet {
     padding-right: 20px;
     padding-left: 20px;
-    margin-bottom: 24px;
     line-height: 40px;
   }
 }
@@ -83,15 +82,15 @@
   background-color: $gray-100;
 
   @include tablet {
-    padding: 44px 91px;
+    padding: 49px 91px 45px 91px;
   }
 }
 
 .modal__button {
-  margin: 20px 20px;
   font-size: 18px;
 
   @include tablet {
+    margin: 30px 30px;
     font-size: 21px;
   }
 }
@@ -111,14 +110,15 @@
 
   @include tablet {
     width: 272px;
+    padding: 16px 32px;
   }
 }
 
 .modal__block--failure {
-  padding: 40px 42px 22px 41px;
+  padding: 45px 42px 22px 41px;
 
   @include tablet {
-    padding: 55px 60px 40px 60px;
+    padding: 50px 60px 42px 60px;
   }
 }
 

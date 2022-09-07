@@ -1,7 +1,7 @@
 .profit {
   list-style: none;
   text-align: left;
-  padding: 35px 20px 22px 20px;
+  padding: 32px 10px 19px 20px;
   grid-column: 1 / -1;
   order: 3;
 
@@ -20,14 +20,14 @@
 
 .profit__item {
   position: relative;
-  padding: 0 0 30px 50px;
+  padding: 0 0 30px 45px;
 
   @include tablet {
-    padding: 156px 36px 59px 36px;
+    padding: 156px 30px 59px 30px;
   }
 
   @include desktop {
-    padding: 156px 58px 59px 58px;
+    padding: 156px 45px 81px 45px;
   }
 }
 
@@ -73,6 +73,11 @@
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
+
+  @include tablet {
+    font-size: $tablet-font-title;
+    padding-bottom: 6px;
+  }
 }
 
 .profit__subtitle {

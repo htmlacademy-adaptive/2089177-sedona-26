@@ -47,6 +47,8 @@
 
 
   @include tablet {
+    height: 258px;
+
     @include retina {
       background-image: url("../img/photo-city-tablet@2x.jpg");
       order: 1;
@@ -56,6 +58,8 @@
   }
 
   @include desktop {
+    height: 256px;
+
     @include retina {
       background-image: url("../img/photo-city-desktop@2x.jpg");
     }
@@ -71,6 +75,8 @@
   background-image: url("../img/photo-brige-mobile.jpg");
 
   @include tablet {
+    height: 255px;
+
     @include retina {
       background-image: url("../img/photo-brige-tablet@2x.jpg");
       order: -1;
@@ -102,10 +108,14 @@
 }
 
 .advantages__item--padding {
-  padding: 26px 18px;
+  padding: 23px 18px;
 
   @include tablet {
     padding: 42px 34px 42px 33px;
+  }
+
+  @include desktop {
+    padding: 42px 34px 64px 33px;
   }
 }
 
@@ -125,6 +135,7 @@
 
 .advantages__title {
   margin: 0;
+  padding-top: 1px;
   font-weight: bold;
   font-size: $mobile-font-title;
   line-height: $mobile-height-title;
@@ -141,14 +152,14 @@
 
 .advantages__subtitle {
   margin: 0;
-  padding: 15px 0 0 0;
+  padding: 13px 0 0 0;
   font-weight: normal;
   font-size: $mobile-font-subtitle;
   line-height: $mobile-height-subtitle;
 }
 
 .advantages__title--padding {
-  padding: 39px 16px 0 16px;
+  padding: 40px 16px 0 16px;
 
   @include tablet {
     padding: 41px 52px 14px 52px;
@@ -160,11 +171,15 @@
 }
 
 .advantages__subtitle--padding {
-  padding: 15px 16px 35px 16px;
+  padding: 10px 16px 40px 16px;
 
   @include tablet {
     padding: 0 32px 42px 32px;
   }
+}
+
+.advantages__subtitle--padding-bottom {
+  padding-bottom: 38px;
 }
 
 .advantages__subtitle::before {
@@ -172,6 +187,10 @@
   counter-increment: advantages__subtitle;
   content: "— №" counter(advantages__subtitle) " —";
   padding-bottom: 17px;
+
+  @include tablet {
+    padding-bottom: 21px;
+  }
 }
 
 .advantages__welcome-img {
