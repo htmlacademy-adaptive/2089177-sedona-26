@@ -47,7 +47,6 @@
   @include desktop {
     padding-top: 0;
   }
-
 }
 
 .gallery__item::before {
@@ -133,8 +132,6 @@
     color: $white;
   }
 }
-
-
 
 .gallery__title:hover {
   color: $gray-300;

@@ -22,6 +22,7 @@
   @include tablet {
     padding-bottom: 80px;
   }
+
   @include desktop {
     padding-top: 100px;
     padding-bottom: 70px;
@@ -42,6 +43,7 @@
   @include tablet {
     padding: 57px 10px 93px 10px;
   }
+
   @include desktop {
     padding: 60px 10px 89px 10px;
   }
@@ -68,6 +70,7 @@
   @include tablet {
     padding-top: 58px;
   }
+
   @include desktop {
     padding-top: 62px;
     padding-left: 7px;
@@ -127,11 +130,11 @@
   @include tablet {
     padding: 28px 0 0 0;
   }
-
 }
 
 .section__title--gallery-fontsize {
   font-size: $mobile-font-title;
+
   @include tablet {
     font-size: $tablet-font-title-max;
   }
@@ -144,6 +147,7 @@
 .section__subtitle--padding {
   padding: 31px 0 0 0;
 }
+
 .section__subtitle--padding-top {
   padding: 20px 0 0 0;
 
@@ -172,15 +176,11 @@
   padding-bottom: 5px;
 
   @include tablet {
-   padding: 0;
-  }
-
-  @include desktop {
     padding: 0;
   }
 }
 
-.section__subtitle--padding-feedback{
+.section__subtitle--padding-feedback {
   padding: 27px 0 0 0;
 
   @include desktop {

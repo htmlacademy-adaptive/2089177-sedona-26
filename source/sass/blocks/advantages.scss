@@ -12,7 +12,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 .advantages__item {
@@ -60,6 +59,7 @@
 
   @include desktop {
     height: 256px;
+
     @include retina {
       background-image: url("../img/photo-city-desktop@2x.jpg");
     }
